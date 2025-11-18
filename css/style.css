@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/*  共通基本設定  */
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  background-image: url(../images/back04.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 外枠・コンテンツ中央設定  */
+.wrapper {
+  width: 960px;
+  padding:40px;
+  margin:0 auto;
+  background-color: #fff1cf
+}
+
+/* ヘッダー */
+.header {
+  margin-bottom: 40px;
+}
+.header img {
+  width: 100%;
+  margin:0 auto;
+}
+.header h1 {
+  margin: 0 0 0 10px;
+  height: 20px;
+  font-size: 12px;
+  color: #fff1cf;
+}
+
+
+/* ナビゲーション */
+.navigation {
+  width: 100% ;
+}
+.navigation__main ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.navigation__main li {
+  font-size: 14px;
+  font-weight: bold;
+  color: #a86f4c;
+}
+.navigation__main a:link {
+  color: #a86f4c;
+  text-decoration: none;
+}
+.navigation__main a:visited {
+  color: #a86f4c;
+}
+.navigation__main a:hover {
+  color: #ad7d4c;
+}
+
+/* コンテンツエリア設定 */
+.main_content {
+  width: 960px;
+}
+.main__content h2 {
+  font-size: 42px;
+  color: #a86f4c;
+  font-weight: normal;
+}
+.main__content p {
+  font-size: 20px;
+}
+
+/* フッター */
+.footer {
+  width: 960px;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: dotted 1px #a86f4c;
+}
+.footer .footer__info {
+  width: 30%;
+}
+.footer .footer__info h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer .footer__info ul {
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+}
+.footer .footer__navigation {
+  width: 30%;
+}
+.footer .footer__navigation small {
+  position: relative;
+  top: 40%;
+  color: #a86f4c;
+}
+.footer .footer__navigation ul {
+  list-style: none;
+}
+.footer .footer__navigation ul li {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #a86f4c;
+  font-weight: bold;
+  text-align: right;
+}
+.footer .footer__navigation ul li a {
+  color: #a86f4c;
+  text-decoration: none;
+}
+.footer .footer__navigation ul li a:hover {
+  color: #ad7d4c;
+}
+
+/*  index.html用  */
+/* メインコンテンツエリア */
+.feature-area {
+  width: 960px;
+  margin: auto;
+}
+.feature-area .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 0 100px 0;
+}
+.feature-area .item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.feature-area .item__img {
+  width: 48%;
+}
+.feature-area .item__img img {
+  width: 100%;
+}
+.feature-area .item__body {
+  width: 48%;
+}
+
+
+/* ニュースエリア */
+.news {
+  margin: 0 auto 100px auto;
+  width: 800px;
+  }
+.news h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #a86f4c;
+}
+.news ul {
+  list-style-type: none;
+}
+.news ul li {
+  font-size: 20px;
+  color: #a86f4c;
+}
+
+/*  menu.html用  */
+.menu {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu__img {
+  width: 100%;
+  height: auto;
+}
+.menu__img img {
+  width: 100%;
+}
+.menu__navigation {
+  width: 50%;
+}
+.menu__navigation ul {
+  margin-bottom: -5px;
+  list-style: none;
+}
+.menu__navigation ul li {
+  padding-top: 10px;
+  list-style: none;
+  font-size: 24px;
+}
+.menu__navigation a:link {
+  color: #a86f4c;
+  text-decoration: none;
+}
+.menu__navigation a:visited {
+  color: #a86f4c;
+}
+.menu__navigation a:hover {
+  color: #ad7d4c;
+}
+.menu__main {
+  margin: 100px 0;
+  text-align: center;
+}
+.menu__main ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+.menu__main ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/*  アクセスページ  */
+.map {
+  margin-bottom: 40px;
+}
+.tablestyle iframe {
+  margin-bottom: 40px;
+}
+
+/*  コンタクトページ  */
+.contact-form {
+  margin-bottom: 50px;
+}
+/* お問い合わせフォーム */
+form {
+  width: 100%;
+}
+form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 600px;
+}
+form li {
+  padding: 6px;
+  margin-bottom: 1px;
+  display: flex;
+  justify-content: space-between;
+}
+form li#send {
+  background: none;
+  margin-top: 6px;
+}
+form label {
+  width: 20%;
+}
+form input,
+form textarea {
+  width: 70%;
+  padding: 20px;
+  border: 1px solid #3f312b;
+  border-radius: 4px;
+  font-size: 16px;
+}
+form input:focus,
+form textarea:focus {
+
+  border: 1px solid #3f312b;
+  background: #d8ccc6;
+}
+form li#send button {
+  width: 20%;
+  padding: 10px 0;
+  background: #3f312b;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+form li#send button:hover {
+  background-color: #7c6a62;
+}
